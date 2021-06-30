@@ -1,0 +1,190 @@
+<https://wisib.de/ontologie/aoi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://wisib.de/ontologie/aoi> <http://www.w3.org/2002/07/owl#versionIRI> <https://wisib.de/ontologie/aoi/0.2> .
+<https://wisib.de/ontologie/aoi> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Al-Hakam Hamdan" .
+<https://wisib.de/ontologie/aoi> <http://purl.org/dc/terms/description> "Auxiliary ontology that defines areas of interests on a component which can be affected by damages(defined in DOT)"@en .
+<https://wisib.de/ontologie/aoi> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/1.0" .
+<https://wisib.de/ontologie/aoi> <http://purl.org/dc/terms/title> "Areas of Interests"@en .
+<https://wisib.de/ontologie/aoi> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aoi" .
+<https://wisib.de/ontologie/aoi> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://wisib.de/ontologie/aoi#" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://wisib.de/ontologie/aoi#hasAreaOfInterest
+<https://wisib.de/ontologie/aoi#hasAreaOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://wisib.de/ontologie/aoi#hasAreaOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#hasAreaOfInterest> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://wisib.de/ontologie/aoi#hasSide> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://wisib.de/ontologie/aoi#hasAreaOfInterest> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://wisib.de/ontologie/aoi#hasAreaOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the relationship between an affected component or structure (e.g. bot:Element) and an AOI."@en .
+<https://wisib.de/ontologie/aoi#hasAreaOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "has Area of Interest"@en .
+# 
+# https://wisib.de/ontologie/aoi#hasSide
+<https://wisib.de/ontologie/aoi#hasSide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://wisib.de/ontologie/aoi#hasSide> <http://www.w3.org/2000/01/rdf-schema#range> <https://wisib.de/ontologie/aoi#ComponentSide> .
+<https://wisib.de/ontologie/aoi#hasSide> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the relationship between a component or structure (e.g. bot:Element) and its side."@en .
+<https://wisib.de/ontologie/aoi#hasSide> <http://www.w3.org/2000/01/rdf-schema#label> "has component side"@en .
+# 
+# https://wisib.de/ontologie/aoi#locates
+<https://wisib.de/ontologie/aoi#locates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://wisib.de/ontologie/aoi#locates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#locates> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the relationship between an AOI and an Individual, which is somehow topologically connected with a component that has the AOI."@en .
+<https://wisib.de/ontologie/aoi#locates> <http://www.w3.org/2000/01/rdf-schema#label> "locates"@en .
+# 
+# https://wisib.de/ontologie/aoi#locatesDamage
+<https://wisib.de/ontologie/aoi#locatesDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://wisib.de/ontologie/aoi#locatesDamage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://wisib.de/ontologie/aoi#locates> .
+<https://wisib.de/ontologie/aoi#locatesDamage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#locatesDamage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/dot#Damage> .
+<https://w3id.org/dot#Damage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#locatesDamage> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the relationship between an AOI and a Damage."@en .
+<https://wisib.de/ontologie/aoi#locatesDamage> <http://www.w3.org/2000/01/rdf-schema#label> "locates Damage"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+# https://w3id.org/dot#Damage
+# 
+# https://wisib.de/ontologie/aoi#AreaOfInterest
+<https://wisib.de/ontologie/aoi#AreaOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#AreaOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "Area of a construction component that is of specific interest, e.g. for assignment of damages"@en .
+<https://wisib.de/ontologie/aoi#AreaOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Area of Interest (AOI)"@en .
+# 
+# https://wisib.de/ontologie/aoi#Bottom
+<https://wisib.de/ontologie/aoi#Bottom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#Bottom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#LowerArea> .
+<https://wisib.de/ontologie/aoi#Bottom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#Surface> .
+<https://wisib.de/ontologie/aoi#Bottom> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the bottom a construction component based on its local coordinate system. No lower located AOI is allowed."@en .
+<https://wisib.de/ontologie/aoi#Bottom> <http://www.w3.org/2000/01/rdf-schema#label> "Bottom"@en .
+# 
+# https://wisib.de/ontologie/aoi#ComponentSide
+<https://wisib.de/ontologie/aoi#ComponentSide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#ComponentSide> <http://www.w3.org/2000/01/rdf-schema#comment> "Area of a construction component that represents a specific horizontal side of a component"@en .
+<https://wisib.de/ontologie/aoi#ComponentSide> <http://www.w3.org/2000/01/rdf-schema#label> "Component Side"@en .
+# 
+# https://wisib.de/ontologie/aoi#Edge
+<https://wisib.de/ontologie/aoi#Edge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#Edge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#ExteriorArea> .
+<https://wisib.de/ontologie/aoi#Edge> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines an interface, where two AOI intersect."@en .
+<https://wisib.de/ontologie/aoi#Edge> <http://www.w3.org/2000/01/rdf-schema#label> "Edge"@en .
+# 
+# https://wisib.de/ontologie/aoi#ExteriorArea
+<https://wisib.de/ontologie/aoi#ExteriorArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#ExteriorArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#ExteriorArea> <http://www.w3.org/2002/07/owl#disjointWith> <https://wisib.de/ontologie/aoi#InternalArea> .
+<https://wisib.de/ontologie/aoi#ExteriorArea> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the outer areal of a construction component based on its local coordinate system."@en .
+<https://wisib.de/ontologie/aoi#ExteriorArea> <http://www.w3.org/2000/01/rdf-schema#label> "Exterior Area"@en .
+# 
+# https://wisib.de/ontologie/aoi#HorizontalCentralArea
+<https://wisib.de/ontologie/aoi#HorizontalCentralArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#HorizontalCentralArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#HorizontalCentralArea> <http://www.w3.org/2002/07/owl#disjointWith> <https://wisib.de/ontologie/aoi#PeripheralArea> .
+<https://wisib.de/ontologie/aoi#HorizontalCentralArea> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the horizontal central area of a construction component."@en .
+<https://wisib.de/ontologie/aoi#HorizontalCentralArea> <http://www.w3.org/2000/01/rdf-schema#label> "Horizontal Central Area"@en .
+# 
+# https://wisib.de/ontologie/aoi#InternalArea
+<https://wisib.de/ontologie/aoi#InternalArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#InternalArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#InternalArea> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the inner areal of a construction component based on its local coordinate system."@en .
+<https://wisib.de/ontologie/aoi#InternalArea> <http://www.w3.org/2000/01/rdf-schema#label> "Internal Area"@en .
+# 
+# https://wisib.de/ontologie/aoi#LowerArea
+<https://wisib.de/ontologie/aoi#LowerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#LowerArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#LowerArea> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the lower area of a construction component based on its local coordinate system."@en .
+<https://wisib.de/ontologie/aoi#LowerArea> <http://www.w3.org/2000/01/rdf-schema#label> "Lower Area"@en .
+# 
+# https://wisib.de/ontologie/aoi#PeripheralArea
+<https://wisib.de/ontologie/aoi#PeripheralArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#PeripheralArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#PeripheralArea> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the peripheral horizontal area of a construction component based on its local coordinate system."@en .
+<https://wisib.de/ontologie/aoi#PeripheralArea> <http://www.w3.org/2000/01/rdf-schema#label> "Peripheral Area"@en .
+# 
+# https://wisib.de/ontologie/aoi#Periphery
+<https://wisib.de/ontologie/aoi#Periphery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#Periphery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#PeripheralArea> .
+<https://wisib.de/ontologie/aoi#Periphery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#Surface> .
+<https://wisib.de/ontologie/aoi#Periphery> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines a periphery of a construction component based on its local coordinate system."@en .
+<https://wisib.de/ontologie/aoi#Periphery> <http://www.w3.org/2000/01/rdf-schema#label> "Periphery"@en .
+# 
+# https://wisib.de/ontologie/aoi#Surface
+<https://wisib.de/ontologie/aoi#Surface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#Surface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#ExteriorArea> .
+<https://wisib.de/ontologie/aoi#Surface> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the vertical central area of a construction component based on its local coordinate system."@en .
+<https://wisib.de/ontologie/aoi#Surface> <http://www.w3.org/2000/01/rdf-schema#label> "Surface"@en .
+# 
+# https://wisib.de/ontologie/aoi#Top
+<https://wisib.de/ontologie/aoi#Top> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#Top> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#Surface> .
+<https://wisib.de/ontologie/aoi#Top> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#UpperArea> .
+<https://wisib.de/ontologie/aoi#Top> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the top a construction component based on its local coordinate system. No higher located AOI is allowed."@en .
+<https://wisib.de/ontologie/aoi#Top> <http://www.w3.org/2000/01/rdf-schema#label> "Top"@en .
+# 
+# https://wisib.de/ontologie/aoi#UpperArea
+<https://wisib.de/ontologie/aoi#UpperArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#UpperArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#UpperArea> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the upper area of a construction component based on its local coordinate system."@en .
+<https://wisib.de/ontologie/aoi#UpperArea> <http://www.w3.org/2000/01/rdf-schema#label> "Upper Area"@en .
+# 
+# https://wisib.de/ontologie/aoi#VerticalCentralArea
+<https://wisib.de/ontologie/aoi#VerticalCentralArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wisib.de/ontologie/aoi#VerticalCentralArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wisib.de/ontologie/aoi#AreaOfInterest> .
+<https://wisib.de/ontologie/aoi#VerticalCentralArea> <http://www.w3.org/2000/01/rdf-schema#comment> "AOI that defines the vertical central area of a construction component based on its local coordinate system."@en .
+<https://wisib.de/ontologie/aoi#VerticalCentralArea> <http://www.w3.org/2000/01/rdf-schema#label> "Vertical Central Area"@en .
+# 
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Al-Hakam Hamdan" .
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid5 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://wisib.de/ontologie/aoi#LowerArea> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://wisib.de/ontologie/aoi#UpperArea> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://wisib.de/ontologie/aoi#VerticalCentralArea> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

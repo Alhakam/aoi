@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://wisib.de/ontologie/aoi#"
+     xml:base="https://wisib.de/ontologie/aoi"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://wisib.de/ontologie/aoi">
+        <owl:versionIRI rdf:resource="https://wisib.de/ontologie/aoi/0.2"/>
+        <terms:creator>
+            <rdf:Description rdf:nodeID="genid1">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name>Al-Hakam Hamdan</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:description xml:lang="en">Auxiliary ontology that defines areas of interests on a component which can be affected by damages(defined in DOT)</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by/1.0</terms:license>
+        <terms:title xml:lang="en">Areas of Interests</terms:title>
+        <vann:preferredNamespacePrefix>aoi</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://wisib.de/ontologie/aoi#</vann:preferredNamespaceUri>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#hasAreaOfInterest -->
+
+
+    <owl:ObjectProperty rdf:about="https://wisib.de/ontologie/aoi#hasAreaOfInterest">
+        <rdfs:range rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://wisib.de/ontologie/aoi#hasSide"/>
+            <rdf:Description rdf:about="https://wisib.de/ontologie/aoi#hasAreaOfInterest"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="en">Defines the relationship between an affected component or structure (e.g. bot:Element) and an AOI.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Area of Interest</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#hasSide -->
+
+
+    <owl:ObjectProperty rdf:about="https://wisib.de/ontologie/aoi#hasSide">
+        <rdfs:range rdf:resource="https://wisib.de/ontologie/aoi#ComponentSide"/>
+        <rdfs:comment xml:lang="en">Defines the relationship between a component or structure (e.g. bot:Element) and its side.</rdfs:comment>
+        <rdfs:label xml:lang="en">has component side</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#locates -->
+
+
+    <owl:ObjectProperty rdf:about="https://wisib.de/ontologie/aoi#locates">
+        <rdfs:domain rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <rdfs:comment xml:lang="en">Defines the relationship between an AOI and an Individual, which is somehow topologically connected with a component that has the AOI.</rdfs:comment>
+        <rdfs:label xml:lang="en">locates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#locatesDamage -->
+
+
+    <owl:ObjectProperty rdf:about="https://wisib.de/ontologie/aoi#locatesDamage">
+        <rdfs:subPropertyOf rdf:resource="https://wisib.de/ontologie/aoi#locates"/>
+        <rdfs:domain rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <rdfs:range rdf:resource="https://w3id.org/dot#Damage"/>
+        <rdfs:comment xml:lang="en">Defines the relationship between an AOI and a Damage.</rdfs:comment>
+        <rdfs:label xml:lang="en">locates Damage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/dot#Damage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dot#Damage"/>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#AreaOfInterest -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#AreaOfInterest">
+        <rdfs:comment xml:lang="en">Area of a construction component that is of specific interest, e.g. for assignment of damages</rdfs:comment>
+        <rdfs:label xml:lang="en">Area of Interest (AOI)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#Bottom -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#Bottom">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#LowerArea"/>
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#Surface"/>
+        <rdfs:comment xml:lang="en">AOI that defines the bottom a construction component based on its local coordinate system. No lower located AOI is allowed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bottom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#ComponentSide -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#ComponentSide">
+        <rdfs:comment xml:lang="en">Area of a construction component that represents a specific horizontal side of a component</rdfs:comment>
+        <rdfs:label xml:lang="en">Component Side</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#Edge -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#Edge">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#ExteriorArea"/>
+        <rdfs:comment xml:lang="en">Defines an interface, where two AOI intersect.</rdfs:comment>
+        <rdfs:label xml:lang="en">Edge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#ExteriorArea -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#ExteriorArea">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <owl:disjointWith rdf:resource="https://wisib.de/ontologie/aoi#InternalArea"/>
+        <rdfs:comment xml:lang="en">AOI that defines the outer areal of a construction component based on its local coordinate system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Exterior Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#HorizontalCentralArea -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#HorizontalCentralArea">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <owl:disjointWith rdf:resource="https://wisib.de/ontologie/aoi#PeripheralArea"/>
+        <rdfs:comment xml:lang="en">AOI that defines the horizontal central area of a construction component.</rdfs:comment>
+        <rdfs:label xml:lang="en">Horizontal Central Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#InternalArea -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#InternalArea">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <rdfs:comment xml:lang="en">AOI that defines the inner areal of a construction component based on its local coordinate system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Internal Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#LowerArea -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#LowerArea">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <rdfs:comment xml:lang="en">AOI that defines the lower area of a construction component based on its local coordinate system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lower Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#PeripheralArea -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#PeripheralArea">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <rdfs:comment xml:lang="en">AOI that defines the peripheral horizontal area of a construction component based on its local coordinate system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Peripheral Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#Periphery -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#Periphery">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#PeripheralArea"/>
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#Surface"/>
+        <rdfs:comment xml:lang="en">AOI that defines a periphery of a construction component based on its local coordinate system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Periphery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#Surface -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#Surface">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#ExteriorArea"/>
+        <rdfs:comment xml:lang="en">AOI that defines the vertical central area of a construction component based on its local coordinate system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Surface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#Top -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#Top">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#Surface"/>
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#UpperArea"/>
+        <rdfs:comment xml:lang="en">AOI that defines the top a construction component based on its local coordinate system. No higher located AOI is allowed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#UpperArea -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#UpperArea">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <rdfs:comment xml:lang="en">AOI that defines the upper area of a construction component based on its local coordinate system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Upper Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://wisib.de/ontologie/aoi#VerticalCentralArea -->
+
+
+    <owl:Class rdf:about="https://wisib.de/ontologie/aoi#VerticalCentralArea">
+        <rdfs:subClassOf rdf:resource="https://wisib.de/ontologie/aoi#AreaOfInterest"/>
+        <rdfs:comment xml:lang="en">AOI that defines the vertical central area of a construction component based on its local coordinate system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vertical Central Area</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid4">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Al-Hakam Hamdan</foaf:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://wisib.de/ontologie/aoi#LowerArea"/>
+            <rdf:Description rdf:about="https://wisib.de/ontologie/aoi#UpperArea"/>
+            <rdf:Description rdf:about="https://wisib.de/ontologie/aoi#VerticalCentralArea"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

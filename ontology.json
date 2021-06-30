@@ -1,0 +1,331 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Al-Hakam Hamdan"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Al-Hakam Hamdan"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://wisib.de/ontologie/aoi#LowerArea"
+    }, {
+      "@id" : "https://wisib.de/ontologie/aoi#UpperArea"
+    }, {
+      "@id" : "https://wisib.de/ontologie/aoi#VerticalCentralArea"
+    } ]
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/dot#Damage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Auxiliary ontology that defines areas of interests on a component which can be affected by damages(defined in DOT)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/1.0"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Areas of Interests"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "aoi"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://wisib.de/ontologie/aoi#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi/0.2"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Area of a construction component that is of specific interest, e.g. for assignment of damages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Area of Interest (AOI)"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#Bottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the bottom a construction component based on its local coordinate system. No lower located AOI is allowed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#LowerArea"
+  }, {
+    "@id" : "https://wisib.de/ontologie/aoi#Surface"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#ComponentSide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Area of a construction component that represents a specific horizontal side of a component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Component Side"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#Edge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines an interface, where two AOI intersect."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Edge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#ExteriorArea"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#ExteriorArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the outer areal of a construction component based on its local coordinate system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Exterior Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#InternalArea"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#HorizontalCentralArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the horizontal central area of a construction component."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Horizontal Central Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#PeripheralArea"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#InternalArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the inner areal of a construction component based on its local coordinate system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Internal Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#LowerArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the lower area of a construction component based on its local coordinate system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lower Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#PeripheralArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the peripheral horizontal area of a construction component based on its local coordinate system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Peripheral Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#Periphery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines a periphery of a construction component based on its local coordinate system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Periphery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#PeripheralArea"
+  }, {
+    "@id" : "https://wisib.de/ontologie/aoi#Surface"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#Surface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the vertical central area of a construction component based on its local coordinate system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#ExteriorArea"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#Top",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the top a construction component based on its local coordinate system. No higher located AOI is allowed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#Surface"
+  }, {
+    "@id" : "https://wisib.de/ontologie/aoi#UpperArea"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#UpperArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the upper area of a construction component based on its local coordinate system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Upper Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#VerticalCentralArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AOI that defines the vertical central area of a construction component based on its local coordinate system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vertical Central Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#hasAreaOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines the relationship between an affected component or structure (e.g. bot:Element) and an AOI."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Area of Interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://wisib.de/ontologie/aoi#hasSide"
+    }, {
+      "@id" : "https://wisib.de/ontologie/aoi#hasAreaOfInterest"
+    } ]
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#hasSide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines the relationship between a component or structure (e.g. bot:Element) and its side."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has component side"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#ComponentSide"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#locates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines the relationship between an AOI and an Individual, which is somehow topologically connected with a component that has the AOI."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "locates"
+  } ]
+}, {
+  "@id" : "https://wisib.de/ontologie/aoi#locatesDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines the relationship between an AOI and a Damage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "locates Damage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/dot#Damage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://wisib.de/ontologie/aoi#locates"
+  } ]
+} ]
