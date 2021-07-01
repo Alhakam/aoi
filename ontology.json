@@ -15,11 +15,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://wisib.de/ontologie/aoi#LowerArea"
+      "@id" : "https://w3id.org/aoi#LowerArea"
     }, {
-      "@id" : "https://wisib.de/ontologie/aoi#UpperArea"
+      "@id" : "https://w3id.org/aoi#UpperArea"
     }, {
-      "@id" : "https://wisib.de/ontologie/aoi#VerticalCentralArea"
+      "@id" : "https://w3id.org/aoi#VerticalCentralArea"
     } ]
   } ]
 }, {
@@ -29,10 +29,7 @@
   "@id" : "http://xmlns.com/foaf/0.1/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/dot#Damage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://wisib.de/ontologie/aoi",
+  "@id" : "https://w3id.org/aoi",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "_:genid1"
@@ -52,13 +49,13 @@
     "@value" : "aoi"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://wisib.de/ontologie/aoi#"
+    "@value" : "https://w3id.org/aoi#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi/0.2"
+    "@id" : "https://w3id.org/aoi/0.2"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest",
+  "@id" : "https://w3id.org/aoi#AreaOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -69,7 +66,7 @@
     "@value" : "Area of Interest (AOI)"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#Bottom",
+  "@id" : "https://w3id.org/aoi#Bottom",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -80,12 +77,12 @@
     "@value" : "Bottom"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#LowerArea"
+    "@id" : "https://w3id.org/aoi#LowerArea"
   }, {
-    "@id" : "https://wisib.de/ontologie/aoi#Surface"
+    "@id" : "https://w3id.org/aoi#Surface"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#ComponentSide",
+  "@id" : "https://w3id.org/aoi#ComponentSide",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -96,7 +93,7 @@
     "@value" : "Component Side"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#Edge",
+  "@id" : "https://w3id.org/aoi#Edge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -107,10 +104,10 @@
     "@value" : "Edge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#ExteriorArea"
+    "@id" : "https://w3id.org/aoi#ExteriorArea"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#ExteriorArea",
+  "@id" : "https://w3id.org/aoi#ExteriorArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -121,13 +118,13 @@
     "@value" : "Exterior Area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#InternalArea"
+    "@id" : "https://w3id.org/aoi#InternalArea"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#HorizontalCentralArea",
+  "@id" : "https://w3id.org/aoi#HorizontalCentralArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -138,13 +135,13 @@
     "@value" : "Horizontal Central Area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#PeripheralArea"
+    "@id" : "https://w3id.org/aoi#PeripheralArea"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#InternalArea",
+  "@id" : "https://w3id.org/aoi#InternalArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -155,10 +152,10 @@
     "@value" : "Internal Area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#LowerArea",
+  "@id" : "https://w3id.org/aoi#LowerArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -169,10 +166,10 @@
     "@value" : "Lower Area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#PeripheralArea",
+  "@id" : "https://w3id.org/aoi#PeripheralArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -183,10 +180,10 @@
     "@value" : "Peripheral Area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#Periphery",
+  "@id" : "https://w3id.org/aoi#Periphery",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -197,12 +194,12 @@
     "@value" : "Periphery"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#PeripheralArea"
+    "@id" : "https://w3id.org/aoi#PeripheralArea"
   }, {
-    "@id" : "https://wisib.de/ontologie/aoi#Surface"
+    "@id" : "https://w3id.org/aoi#Surface"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#Surface",
+  "@id" : "https://w3id.org/aoi#Surface",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -213,10 +210,10 @@
     "@value" : "Surface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#ExteriorArea"
+    "@id" : "https://w3id.org/aoi#ExteriorArea"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#Top",
+  "@id" : "https://w3id.org/aoi#Top",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -227,12 +224,12 @@
     "@value" : "Top"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#Surface"
+    "@id" : "https://w3id.org/aoi#Surface"
   }, {
-    "@id" : "https://wisib.de/ontologie/aoi#UpperArea"
+    "@id" : "https://w3id.org/aoi#UpperArea"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#UpperArea",
+  "@id" : "https://w3id.org/aoi#UpperArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -243,10 +240,10 @@
     "@value" : "Upper Area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#VerticalCentralArea",
+  "@id" : "https://w3id.org/aoi#VerticalCentralArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -257,10 +254,10 @@
     "@value" : "Vertical Central Area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#hasAreaOfInterest",
+  "@id" : "https://w3id.org/aoi#hasAreaOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -271,17 +268,17 @@
     "@value" : "has Area of Interest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ],
   "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
     "@list" : [ {
-      "@id" : "https://wisib.de/ontologie/aoi#hasSide"
+      "@id" : "https://w3id.org/aoi#hasSide"
     }, {
-      "@id" : "https://wisib.de/ontologie/aoi#hasAreaOfInterest"
+      "@id" : "https://w3id.org/aoi#hasAreaOfInterest"
     } ]
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#hasSide",
+  "@id" : "https://w3id.org/aoi#hasSide",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -292,31 +289,31 @@
     "@value" : "has component side"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#ComponentSide"
+    "@id" : "https://w3id.org/aoi#ComponentSide"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#locates",
+  "@id" : "https://w3id.org/aoi#locates",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Defines the relationship between an AOI and an Individual, which is somehow topologically connected with a component that has the AOI."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "locates"
   } ]
 }, {
-  "@id" : "https://wisib.de/ontologie/aoi#locatesDamage",
+  "@id" : "https://w3id.org/aoi#locatesDamage",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Defines the relationship between an AOI and a Damage."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#AreaOfInterest"
+    "@id" : "https://w3id.org/aoi#AreaOfInterest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -326,6 +323,9 @@
     "@id" : "https://w3id.org/dot#Damage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://wisib.de/ontologie/aoi#locates"
+    "@id" : "https://w3id.org/aoi#locates"
   } ]
+}, {
+  "@id" : "https://w3id.org/dot#Damage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 } ]
